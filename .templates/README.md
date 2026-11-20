@@ -53,7 +53,7 @@ Options:
 ```
 
 `gixor dump Rust` adds to the `.gitignore` rather than replacing it: the rules you wrote yourself
-and the boilerplates already listed both stay. `gixor dump -Rust` drops one of them, `--no-append`
+and the boilerplates already listed both stay. `gixor dump -- -Rust` drops one of them, `--no-append`
 drops them all, `--clear-prologue` drops what you wrote, and `--clear` drops both. `--dry-run`
 shows the result without writing it. Should anything go wrong, the `.gitignore` is left as it was.
 
