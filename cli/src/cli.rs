@@ -226,7 +226,10 @@ pub(crate) struct DumpOpts {
     #[clap(short, long, hide = true, default_value_t = false)]
     pub(crate) append: bool,
 
-    #[clap(value_name = "NAMES...", help = "The boilerplate names to dump.")]
+    #[clap(
+        value_name = "NAMES...",
+        help = "The boilerplate names to dump. Prefix a name with a dash to drop it, written after the double dash so that it is not read as an option (gixor dump -- -Rust)."
+    )]
     pub(crate) names: Vec<String>,
 }
 

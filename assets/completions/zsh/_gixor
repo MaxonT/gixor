@@ -120,7 +120,7 @@ _arguments "${_arguments_options[@]}" : \
 '--append[Kept so that existing scripts keep working. Appending is the default now]' \
 '-h[Print help]' \
 '--help[Print help]' \
-'*::names -- The boilerplate names to dump.:_default' \
+'*::names -- The boilerplate names to dump. Prefix a name with a dash to drop it, written after the double dash so that it is not read as an option (gixor dump -- -Rust).:_default' \
 && ret=0
 ;;
 (entries)
